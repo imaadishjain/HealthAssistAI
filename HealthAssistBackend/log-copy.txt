@@ -1,0 +1,395 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.9)
+
+2026-02-28 14:15:33 [main] INFO  c.e.H.HealthAssistBackendApplication - Starting HealthAssistBackendApplication v0.0.1-SNAPSHOT using Java 21 with PID 25040 (C:\Users\aadishkumar.jain\Additional Training\Capstone Project\HealthAssistBackend\target\HealthAssistBackend-0.0.1-SNAPSHOT.jar started by aadishkumar.jain in C:\Users\aadishkumar.jain\Additional Training\Capstone Project\HealthAssistBackend)
+2026-02-28 14:15:33 [main] DEBUG c.e.H.HealthAssistBackendApplication - Running with Spring Boot v3.5.9, Spring v6.2.15
+2026-02-28 14:15:33 [main] INFO  c.e.H.HealthAssistBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2026-02-28 14:15:40 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-28 14:15:41 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 492 ms. Found 4 JPA repository interfaces.
+2026-02-28 14:15:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-02-28 14:15:44 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-02-28 14:15:44 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.50]
+2026-02-28 14:15:44 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-02-28 14:15:44 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 11222 ms
+2026-02-28 14:15:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-02-28 14:15:47 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.mariadb.jdbc.Connection@15d79b70
+2026-02-28 14:15:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-02-28 14:15:48 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-28 14:15:48 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.39.Final
+2026-02-28 14:15:48 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-02-28 14:15:50 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-28 14:15:50 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MariaDBDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-28 14:15:50 [main] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 11.8.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-28 14:15:54 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-28 14:15:54 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-28 14:15:55 [main] INFO  c.a.c.h.n.i.NettyUtility - {"az.sdk.message":"The following Netty versions were found on the classpath and have a mismatch with the versions used by azure-core-http-netty. If your application runs without issue this message can be ignored, otherwise please align the Netty versions used in your application. For more information, see https://aka.ms/azsdk/java/dependency/troubleshoot.","azure-netty-version":"4.1.118.Final","azure-netty-native-version":"2.0.70.Final","classpath-netty-version-io.netty:netty-common":"4.1.130.Final","classpath-netty-version-io.netty:netty-handler":"4.1.130.Final","classpath-netty-version-io.netty:netty-handler-proxy":"4.1.130.Final","classpath-netty-version-io.netty:netty-buffer":"4.1.130.Final","classpath-netty-version-io.netty:netty-codec":"4.1.130.Final","classpath-netty-version-io.netty:netty-codec-http":"4.1.130.Final","classpath-netty-version-io.netty:netty-codec-http2":"4.1.130.Final","classpath-netty-version-io.netty:netty-transport-native-unix-common":"4.1.130.Final","classpath-netty-version-io.netty:netty-transport-native-epoll":"4.1.130.Final","classpath-netty-version-io.netty:netty-transport-native-kqueue":"4.1.130.Final","classpath-native-netty-version-io.netty:netty-tcnative-boringssl-static":"2.0.74.Final"}
+2026-02-28 14:15:58 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-28 14:16:00 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2026-02-28 14:16:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-02-28 14:16:01 [main] INFO  c.e.H.HealthAssistBackendApplication - Started HealthAssistBackendApplication in 29.16 seconds (process running for 30.972)
+2026-02-28 14:16:01 [main] INFO  c.e.H.s.DocumentIngestionService - Starting healthcare document ingestion...
+2026-02-28 14:16:01 [main] INFO  c.e.H.s.DocumentIngestionService - Ingesting PDF: HA_SOP_01_Patient_Triage_and_Risk_Routing_Aligned.pdf
+2026-02-28 14:16:05 [main] WARN  org.apache.fontbox.ttf.CmapSubtable - Format 14 cmap table is not supported and will be ignored
+2026-02-28 14:16:06 [main] INFO  c.e.H.s.DocumentIngestionService - Ingested 1 pages from HA_SOP_01_Patient_Triage_and_Risk_Routing_Aligned.pdf
+2026-02-28 14:16:06 [main] INFO  c.e.H.s.DocumentIngestionService - Ingesting PDF: HA_SOP_02_Appointment_Scheduling_and_Rescheduling_Aligned.pdf
+2026-02-28 14:16:07 [main] INFO  c.e.H.s.DocumentIngestionService - Ingested 1 pages from HA_SOP_02_Appointment_Scheduling_and_Rescheduling_Aligned.pdf
+2026-02-28 14:16:07 [main] INFO  c.e.H.s.DocumentIngestionService - Ingesting PDF: HA_SOP_03_Insurance_Eligibility_and_Preauthorization_Aligned.pdf
+2026-02-28 14:16:07 [main] INFO  c.e.H.s.DocumentIngestionService - Ingested 1 pages from HA_SOP_03_Insurance_Eligibility_and_Preauthorization_Aligned.pdf
+2026-02-28 14:16:07 [main] INFO  c.e.H.s.DocumentIngestionService - Ingesting PDF: HA_SOP_04_Lab_and_Imaging_Info_Requests_Aligned.pdf
+2026-02-28 14:16:07 [main] INFO  c.e.H.s.DocumentIngestionService - Ingested 1 pages from HA_SOP_04_Lab_and_Imaging_Info_Requests_Aligned.pdf
+2026-02-28 14:16:07 [main] INFO  c.e.H.s.DocumentIngestionService - Ingesting PDF: HA_SOP_05_Discharge_Instructions_and_Followups_Aligned.pdf
+2026-02-28 14:16:07 [main] INFO  c.e.H.s.DocumentIngestionService - Ingested 1 pages from HA_SOP_05_Discharge_Instructions_and_Followups_Aligned.pdf
+2026-02-28 14:16:07 [main] INFO  c.e.H.s.DocumentIngestionService - Ingesting PDF: HA_SOP_06_Facility_and_Biomedical_Equipment_Issues_Aligned.pdf
+2026-02-28 14:16:08 [main] INFO  c.e.H.s.DocumentIngestionService - Ingested 1 pages from HA_SOP_06_Facility_and_Biomedical_Equipment_Issues_Aligned.pdf
+2026-02-28 14:16:08 [main] INFO  c.e.H.s.DocumentIngestionService - Ingesting PDF: HA_SOP_07_Patient_Navigation_and_Wayfinding_Aligned.pdf
+2026-02-28 14:16:09 [main] INFO  c.e.H.s.DocumentIngestionService - Ingested 1 pages from HA_SOP_07_Patient_Navigation_and_Wayfinding_Aligned.pdf
+2026-02-28 14:16:09 [main] INFO  c.e.H.s.DocumentIngestionService - Ingesting PDF: HA_SOP_08_Medical_Records_and_Reports_Request_Aligned.pdf
+2026-02-28 14:16:09 [main] INFO  c.e.H.s.DocumentIngestionService - Ingested 1 pages from HA_SOP_08_Medical_Records_and_Reports_Request_Aligned.pdf
+2026-02-28 14:16:09 [main] INFO  c.e.H.s.DocumentIngestionService - Ingesting PDF: HA_SOP_09_Multilingual_Support_Kannada_English_Aligned.pdf
+2026-02-28 14:16:10 [main] INFO  c.e.H.s.DocumentIngestionService - Ingested 1 pages from HA_SOP_09_Multilingual_Support_Kannada_English_Aligned.pdf
+2026-02-28 14:16:10 [main] INFO  c.e.H.s.DocumentIngestionService - Ingesting PDF: HA_SOP_10_Emergency_Escalation_and_OnCall_Handovers_Aligned.pdf
+2026-02-28 14:16:10 [main] INFO  c.e.H.s.DocumentIngestionService - Ingested 1 pages from HA_SOP_10_Emergency_Escalation_and_OnCall_Handovers_Aligned.pdf
+2026-02-28 14:16:10 [main] INFO  c.e.H.s.DocumentIngestionService - Ingesting KB file: department-info.txt
+2026-02-28 14:16:10 [main] INFO  c.e.H.s.DocumentIngestionService - Ingested 15 sections from department-info.txt
+2026-02-28 14:16:10 [main] INFO  c.e.H.s.DocumentIngestionService - Ingesting KB file: discharge-process.txt
+2026-02-28 14:16:10 [main] INFO  c.e.H.s.DocumentIngestionService - Ingested 8 sections from discharge-process.txt
+2026-02-28 14:16:10 [main] INFO  c.e.H.s.DocumentIngestionService - Ingesting KB file: hospital-info.txt
+2026-02-28 14:16:10 [main] INFO  c.e.H.s.DocumentIngestionService - Ingested 6 sections from hospital-info.txt
+2026-02-28 14:16:10 [main] INFO  c.e.H.s.DocumentIngestionService - Ingesting KB file: insurance-rules.txt
+2026-02-28 14:16:10 [main] INFO  c.e.H.s.DocumentIngestionService - Ingested 8 sections from insurance-rules.txt
+2026-02-28 14:16:10 [main] INFO  c.e.H.s.DocumentIngestionService - Ingesting KB file: patient-rights.txt
+2026-02-28 14:16:10 [main] INFO  c.e.H.s.DocumentIngestionService - Ingested 6 sections from patient-rights.txt
+2026-02-28 14:16:10 [main] INFO  c.e.H.s.DocumentIngestionService - Ingesting KB file: triage-guidelines.txt
+2026-02-28 14:16:10 [main] INFO  c.e.H.s.DocumentIngestionService - Ingested 9 sections from triage-guidelines.txt
+2026-02-28 14:16:10 [main] INFO  c.e.H.s.DocumentIngestionService - Ingesting KB file: visiting-hours.txt
+2026-02-28 14:16:10 [main] INFO  c.e.H.s.DocumentIngestionService - Ingested 8 sections from visiting-hours.txt
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 5 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 5 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 5 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 5 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 5 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 5 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 5 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 5 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 5 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 5 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  o.s.a.t.splitter.TextSplitter - Splitting up document into 2 chunks.
+2026-02-28 14:16:11 [main] INFO  c.e.H.s.DocumentIngestionService - Adding 158 document chunks to vector store
+2026-02-28 14:16:20 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = d28f3120-37ee-4d06-98c5-8d45ec8cca5f
+2026-02-28 14:16:20 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 53121e9b-2f00-4b0b-b2a8-f72ecc4e3a4c
+2026-02-28 14:16:20 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 5a830dff-ccab-4ba9-80e3-ce138226adb0
+2026-02-28 14:16:21 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 430685c1-bc93-4858-8025-8fe007b7dfdc
+2026-02-28 14:16:21 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 1f27779c-649e-4d58-98ff-5381a507cb47
+2026-02-28 14:16:22 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = f460ccbb-1f6d-452a-8fc5-3bfbb3cb4e0c
+2026-02-28 14:16:22 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 0de08257-2f11-4788-b0df-d367ad931da4
+2026-02-28 14:16:22 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 1882744a-b57c-4b02-ae0f-eab6d8b5f6ba
+2026-02-28 14:16:23 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 10c1c4fb-4e11-4535-ba2d-8eb6437fccd2
+2026-02-28 14:16:23 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 1d3bee3b-af6c-4a2b-a32b-b0347c40c633
+2026-02-28 14:16:23 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 527834d7-6ac1-43bf-ba95-b8023cf5fc49
+2026-02-28 14:16:23 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 523897b2-a364-454b-bd1b-13c36ec8aa76
+2026-02-28 14:16:24 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = d4e73bf0-4855-47b1-a33e-d3de578247da
+2026-02-28 14:16:24 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = fbae7b54-2f46-4d9a-a64e-1e38f88ec1de
+2026-02-28 14:16:25 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 78c0449c-5f93-4141-8ffd-fd418d78f625
+2026-02-28 14:16:25 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 8cb605b2-e7d4-49bd-96be-6615468e66fc
+2026-02-28 14:16:25 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 77646bd4-0770-4f00-a658-8c095cd9cad9
+2026-02-28 14:16:26 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 162db15f-3e71-4d38-9cbc-c8a053fd8285
+2026-02-28 14:16:26 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 35b97ef4-7165-4a86-bcf4-9382cba88a36
+2026-02-28 14:16:27 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 85e83b1f-6e0d-4017-b963-c9d081f483bc
+2026-02-28 14:16:27 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 8062d337-f61c-48c4-9ceb-19ff5b3a08e9
+2026-02-28 14:16:27 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 33d680cb-6a55-42c7-bc99-c93be61fc20e
+2026-02-28 14:16:28 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = bd383642-57ca-4571-ae53-02c6f5f44f8f
+2026-02-28 14:16:28 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = ca8f0e2c-b961-4789-90d8-06f4367b0d5e
+2026-02-28 14:16:28 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 9e9729c8-6fff-419d-874a-0c4c47a91387
+2026-02-28 14:16:29 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 5071c695-af30-40c2-a9d0-1b6e3aef270e
+2026-02-28 14:16:29 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = d0537453-fb40-4235-af3b-e5bfc67e8dd2
+2026-02-28 14:16:29 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 8aa01e14-2f72-4a38-8fb0-4323222cc4da
+2026-02-28 14:16:30 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = b914aac4-20f2-407b-998c-99d9939a7bb7
+2026-02-28 14:16:30 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 3109fef3-9b46-4511-bffb-786d1b6670cc
+2026-02-28 14:16:30 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = a6ff527b-2652-429e-8d93-e3d3d16aa1a0
+2026-02-28 14:16:31 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 187e6505-49d1-4afb-8789-b947268b9b06
+2026-02-28 14:16:31 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 80100541-600d-4c96-866e-cadc8688954b
+2026-02-28 14:16:31 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = fae8d93d-8a71-4438-aad7-cc0bc71c5735
+2026-02-28 14:16:31 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = d207cff9-1109-4e8f-8a59-edfaa5cc0a44
+2026-02-28 14:16:32 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 8423497f-2467-48b7-9f95-6521aed67ffe
+2026-02-28 14:16:32 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 00dd6d8e-ba7c-4043-b1f7-f8bb809c069a
+2026-02-28 14:16:32 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = f36561de-fc83-4b57-bd53-c913b22c306b
+2026-02-28 14:16:33 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = b1ae6b59-92e1-439f-b6b5-f2b6234b5c71
+2026-02-28 14:16:33 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = f7b932c1-eb06-4117-9620-59e4106ed7d5
+2026-02-28 14:16:33 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = cdd41148-bbbe-4641-93fa-637b2b20f890
+2026-02-28 14:16:34 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 3c708595-07b0-45b6-9c5c-4307329401f9
+2026-02-28 14:16:34 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = c037c136-0391-4099-b566-c929c9768a98
+2026-02-28 14:16:35 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = ed2b38b6-924f-462d-825e-b37cdb38d3f1
+2026-02-28 14:16:35 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 38dc5226-3cc9-4a35-aee8-2d368e8f9843
+2026-02-28 14:16:35 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 202fc168-1e35-4558-8617-a238406dacd8
+2026-02-28 14:16:36 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = bbb71452-8ae3-4eb9-9ce7-a2f68bf568ea
+2026-02-28 14:16:36 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 5aef6019-6565-4733-981f-2390585aa2a4
+2026-02-28 14:16:36 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 61924de3-67ca-4a64-baa0-35b24ba973e6
+2026-02-28 14:16:36 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 56717832-2d9a-4c41-a9c1-1d72282e3312
+2026-02-28 14:16:37 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = becf494b-41e1-4f5a-b9e6-d3936a53749f
+2026-02-28 14:16:37 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 8ee44703-52d0-42de-9257-48b8476a2fdf
+2026-02-28 14:16:37 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = d2e8a857-1159-4c5c-b147-ac91defc499f
+2026-02-28 14:16:38 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 4614ed5a-5858-4c1c-9c53-fc3f091ce3e7
+2026-02-28 14:16:38 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 6868a1d5-36f5-4a59-bcef-61eeb8871a65
+2026-02-28 14:16:38 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 44000b7e-452a-4135-a194-7facfc644614
+2026-02-28 14:16:39 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 67dae7ea-dcbb-4936-8476-354bf39d35d2
+2026-02-28 14:16:39 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 13fb7fdf-2e4c-4f58-86be-68f9ea4fefe7
+2026-02-28 14:16:39 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = f7816b9a-6058-4791-9f68-8285142ee44e
+2026-02-28 14:16:40 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 6c211e71-00c0-4c30-bffa-56d327c120f0
+2026-02-28 14:16:40 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = c0baa1e8-7505-439c-9808-dbc4df55ac96
+2026-02-28 14:16:40 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 6fbc714d-9678-4390-8331-f6fbd63d57f5
+2026-02-28 14:16:40 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-28 14:16:40 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-02-28 14:16:40 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2026-02-28 14:16:40 [http-nio-8080-exec-1] ERROR c.e.H.e.GlobalExceptionHandler - Unhandled exception: No static resource api/doctors.
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/doctors.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at com.example.HealthAssistBackend.config.RateLimitFilter.doFilter(RateLimitFilter.java:48)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-02-28 14:16:40 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 7fe696a3-4d0a-4456-85fa-a2cd810a85e2
+2026-02-28 14:16:41 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = b113b8f9-d865-4121-9fb5-e76b0d9794fe
+2026-02-28 14:16:41 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = e67426e9-3d9e-4dee-852f-8a24c68db441
+2026-02-28 14:16:41 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 4db42ef8-382b-47ed-bbab-a9af3d347e38
+2026-02-28 14:16:42 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 17aec630-241b-4aee-ac30-a63c28c49aaa
+2026-02-28 14:16:42 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 8f3238d2-a5cf-4bc8-9c54-122d38ffec3d
+2026-02-28 14:16:42 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 105bf1cc-cfc6-4518-a2aa-62936f2d509c
+2026-02-28 14:16:43 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 3b0346e9-93b5-4a02-92b7-4a64c1a1b8f9
+2026-02-28 14:16:43 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 1b034602-e7a8-4fd0-9f5f-efbd462f91dd
+2026-02-28 14:16:43 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 9c66a287-f766-40a0-a3ff-d15af673660f
+2026-02-28 14:16:44 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 5e9ea244-7e37-4082-b748-fb6f6703990c
+2026-02-28 14:16:44 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 83c6a181-b9c0-4e47-b9ab-73b4b39f4336
+2026-02-28 14:16:45 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 8e73fac3-2cf6-492e-a641-17efbd56439f
+2026-02-28 14:16:45 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 0e24201f-3f30-449f-b035-3639e00bf2c6
+2026-02-28 14:16:45 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = d17ada7d-e7de-4e92-ab22-49967d6b955d
+2026-02-28 14:16:45 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = dd6af961-db6b-41e8-af77-1970ec77f684
+2026-02-28 14:16:46 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 711d9a25-c0df-4ed9-8a41-010ef5b013a3
+2026-02-28 14:16:46 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 18ffac3d-8f36-4a0c-a063-b44ad3460d38
+2026-02-28 14:16:46 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 3aa8de3c-2fb2-43c2-9878-68e9b6e2ce0b
+2026-02-28 14:16:47 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = c161baf2-1813-470a-86ff-3a9204e44a5d
+2026-02-28 14:16:47 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 9993d575-62a7-4f10-bbfc-c976460cc16d
+2026-02-28 14:16:47 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 81da2785-74ca-4687-8f33-37a60923feb9
+2026-02-28 14:16:48 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = d7d2185a-26d5-483e-a9d2-ff8edad4e4dc
+2026-02-28 14:16:48 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 648ac71e-e5fc-40f9-a132-4fe925cc465b
+2026-02-28 14:16:48 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = e5533946-7937-4d81-9bbf-cb3c7de0d118
+2026-02-28 14:16:48 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = d531c5bc-6187-423c-b00b-9e6e7b0eedd3
+2026-02-28 14:16:49 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = bdbf67cd-1ed5-45b3-b189-456ce354d327
+2026-02-28 14:16:49 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 03fb173a-e954-44d4-b616-8e59c138634d
+2026-02-28 14:16:50 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = f0c19172-eb2d-44a8-82be-1e9bbc490786
+2026-02-28 14:16:50 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = a0d95ab0-c405-4075-8a4c-5b997aedce28
+2026-02-28 14:16:50 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 6584c312-e131-42b1-85c7-7382f19e4781
+2026-02-28 14:16:51 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = ec2a48ed-eb75-4f75-bb44-6aa3f973c259
+2026-02-28 14:16:51 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = ba423b5a-3ba8-4d17-bc07-e02ede15ea03
+2026-02-28 14:16:51 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 15751f08-fa87-4ee0-b902-c403c28bc1e3
+2026-02-28 14:16:51 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = a646e2ca-dea5-47e1-9a13-f3b690ff5824
+2026-02-28 14:16:52 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 5ba85686-5fb8-4efc-8dcf-4f3ea0ad655d
+2026-02-28 14:16:52 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 6af91d23-849b-45e2-8ea8-446acb8c4e1a
+2026-02-28 14:16:52 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 3fdd8682-b737-4363-b78d-c2b2a1ead096
+2026-02-28 14:16:53 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 652d398b-8e9f-4e6f-922e-3c65e4ad3f51
+2026-02-28 14:16:53 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 3fa9c4b2-e9e6-46b3-9948-e90c3e3c0de0
+2026-02-28 14:16:53 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 87f3b366-506b-4855-aa7f-006eba17269e
+2026-02-28 14:16:54 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = fdd55312-2ec8-4d8d-bffc-15d550e9cd83
+2026-02-28 14:16:54 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 9e1743bd-afc1-4c98-883f-df89763f733b
+2026-02-28 14:16:54 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = a34f0ffb-52b8-4d1d-8636-05bf2baf8d9c
+2026-02-28 14:16:54 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 4a7bc761-d96e-473c-95f8-3b9338b1e79e
+2026-02-28 14:16:55 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = cfa1759f-4715-48a9-8e17-2e5c57596ef3
+2026-02-28 14:16:55 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 266ee2ef-71df-45f0-abc4-ada9a4798843
+2026-02-28 14:16:55 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 92951e3f-47a1-471e-9c41-7faf89185fad
+2026-02-28 14:16:56 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 99832857-f164-4dd6-8313-f60309950789
+2026-02-28 14:16:56 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = ecf47fb6-64f8-4ad2-a35e-e3fb7a8ec4e5
+2026-02-28 14:16:56 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 312f8063-489f-4bbc-85d3-a7eccd8df855
+2026-02-28 14:16:57 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = c0a4aed9-09a1-48fb-8a88-f354902ad40b
+2026-02-28 14:16:57 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 03bdb4d0-35ae-425e-b997-17d6a004f657
+2026-02-28 14:16:57 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 59ed74da-967d-4f62-bd6e-bc4e686c284e
+2026-02-28 14:16:57 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 490cbaf8-be44-4818-8a99-c698a21b7289
+2026-02-28 14:16:58 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 5df06475-4c9c-48eb-8bb7-c42d7303feca
+2026-02-28 14:16:58 [http-nio-8080-exec-2] ERROR c.e.H.e.GlobalExceptionHandler - Unhandled exception: No static resource api/doctors.
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api/doctors.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:585)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at com.example.HealthAssistBackend.config.RateLimitFilter.doFilter(RateLimitFilter.java:48)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1774)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-02-28 14:16:58 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 17205e98-504e-4d5e-9302-1ec21ba329a0
+2026-02-28 14:16:58 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 65ec754a-8ea5-4f32-8245-8e9195fdcdb4
+2026-02-28 14:16:59 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 7e34acfc-93af-407d-9997-1ef148a56461
+2026-02-28 14:16:59 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 65c9ad2a-8458-4842-9098-ac4d71bf350b
+2026-02-28 14:16:59 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 5155f723-d9ff-4123-b6d8-d6ef124ec1ce
+2026-02-28 14:17:00 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = f88d175b-f5b7-4f09-8006-5b322cdb9310
+2026-02-28 14:17:00 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 8dbdad8f-ad1b-47a1-aecb-872a81bb8c72
+2026-02-28 14:17:01 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = cf59c71d-7570-4742-a248-cde75c07e87f
+2026-02-28 14:17:01 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = c5d527aa-112a-4f98-bdae-c138b2c42211
+2026-02-28 14:17:01 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 1b451415-627d-4db3-9b21-648426a0bb89
+2026-02-28 14:17:02 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 14af0a60-1e39-4814-b329-e94f7cde70c0
+2026-02-28 14:17:02 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 9d06e75f-680a-4f0b-811d-c0cff1d52ace
+2026-02-28 14:17:02 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 8f31f4a3-bfc5-4862-9f2e-619140f36108
+2026-02-28 14:17:02 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = e344b9e7-e7a5-4802-a43a-97c44a16a218
+2026-02-28 14:17:03 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 85ce7356-4419-4d9d-be6b-ed96a1887e10
+2026-02-28 14:17:03 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = ac15e152-08df-4713-a838-3b9bb3ef4635
+2026-02-28 14:17:03 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 16941daa-dfae-472f-9cdb-0ff3eb5ec390
+2026-02-28 14:17:04 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 5ca7db7d-f652-4c26-b95b-432d6fc9f2ee
+2026-02-28 14:17:04 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = cd8bd073-ac1b-4fc9-ae8a-a14e512ef32c
+2026-02-28 14:17:04 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = d20b8d5c-0dd0-452f-98c0-b98d63e31a08
+2026-02-28 14:17:05 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 3d63ff1c-bceb-4a44-b465-397b815fc6b5
+2026-02-28 14:17:05 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 38bf20a5-bcbd-47b4-9193-d15d9d694d34
+2026-02-28 14:17:05 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = b1611d95-f5f5-4f15-a3cc-53031030c90e
+2026-02-28 14:17:05 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = e35ff8fa-9549-4b9f-a83f-1ffd55983e3c
+2026-02-28 14:17:06 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = f51955c9-283b-4db7-8f9a-f5230c04ee43
+2026-02-28 14:17:06 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = e2df8eb5-abe1-41f8-a3b8-81934b38bdfd
+2026-02-28 14:17:07 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = ae8b721c-3384-4168-b6d9-ced6be92fb70
+2026-02-28 14:17:07 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 669215c1-7c20-4e6e-bc59-7fa5eaf82bc8
+2026-02-28 14:17:07 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = f8fb6c02-dab6-4a52-a4e6-39b7326c8aff
+2026-02-28 14:17:07 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = a8d971b6-e180-46fd-8ba9-d7fdeb6ee041
+2026-02-28 14:17:08 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 52e8f650-629d-40fe-8286-48a5be1963dd
+2026-02-28 14:17:08 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 14511f00-9c51-4300-9f02-09749bfa2cb1
+2026-02-28 14:17:08 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 491eb44a-0214-42fe-8051-ebc46a68f7f4
+2026-02-28 14:17:09 [main] INFO  o.s.ai.vectorstore.SimpleVectorStore - Calling EmbeddingModel for document id = 399c52f2-b242-41ce-86bb-f7cf4090e20b

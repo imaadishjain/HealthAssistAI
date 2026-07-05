@@ -1,0 +1,204 @@
+/* ═══════════════════════════════════════════════════
+   HealthAssist AI — Enterprise Design System
+   ═══════════════════════════════════════════════════ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* ─── Design Tokens ─── */
+:root {
+  /* Primary palette */
+  --primary-50:  #eff6ff;
+  --primary-100: #dbeafe;
+  --primary-200: #bfdbfe;
+  --primary-300: #93c5fd;
+  --primary-400: #60a5fa;
+  --primary-500: #3b82f6;
+  --primary-600: #2563eb;
+  --primary-700: #1d4ed8;
+  --primary-800: #1e40af;
+  --primary-900: #1e3a5f;
+
+  /* Accent */
+  --accent-400: #818cf8;
+  --accent-500: #6366f1;
+  --accent-600: #4f46e5;
+
+  /* Neutral palette */
+  --gray-25:  #fcfcfd;
+  --gray-50:  #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+
+  /* Semantic */
+  --success-50:  #ecfdf5;
+  --success-100: #d1fae5;
+  --success-200: #a7f3d0;
+  --success-500: #10b981;
+  --success-600: #059669;
+  --success-700: #047857;
+  --warning-50:  #fffbeb;
+  --warning-100: #fef3c7;
+  --warning-200: #fde68a;
+  --warning-500: #f59e0b;
+  --warning-600: #d97706;
+  --warning-700: #b45309;
+  --danger-50:   #fef2f2;
+  --danger-100:  #fee2e2;
+  --danger-200:  #fecaca;
+  --danger-300:  #fca5a5;
+  --danger-400:  #f87171;
+  --danger-500:  #ef4444;
+  --danger-600:  #dc2626;
+  --danger-700:  #b91c1c;
+  --info-50:     #eff6ff;
+  --info-100:    #dbeafe;
+  --info-500:    #3b82f6;
+  --info-700:    #1d4ed8;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #2563eb 0%, #6366f1 100%);
+  --gradient-hero: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+  --gradient-card: linear-gradient(135deg, rgba(59,130,246,0.08) 0%, rgba(99,102,241,0.06) 100%);
+  --gradient-blue-purple: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  --gradient-green-teal: linear-gradient(135deg, #10b981 0%, #14b8a6 100%);
+  --gradient-orange-red: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);
+  --gradient-pink-purple: linear-gradient(135deg, #ec4899 0%, #8b5cf6 100%);
+  --gradient-mesh: radial-gradient(at 40% 20%, rgba(59,130,246,0.12) 0%, transparent 50%),
+                   radial-gradient(at 80% 0%,  rgba(99,102,241,0.10) 0%, transparent 50%),
+                   radial-gradient(at 0% 50%,  rgba(16,185,129,0.08) 0%, transparent 50%);
+
+  /* Dark surface */
+  --surface-primary: #0f1117;
+  --surface-card: #171a26;
+  --surface-elevated: #1e2235;
+  --surface-input: #1a1d2e;
+  --border-dark: rgba(255,255,255,0.07);
+  --border-dark-hover: rgba(255,255,255,0.14);
+
+  /* Elevation */
+  --shadow-xs:  0 1px 2px rgba(0,0,0,0.05);
+  --shadow-sm:  0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-md:  0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -1px rgba(0,0,0,0.04);
+  --shadow-lg:  0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -2px rgba(0,0,0,0.03);
+  --shadow-xl:  0 20px 25px -5px rgba(0,0,0,0.08), 0 10px 10px -5px rgba(0,0,0,0.02);
+  --shadow-glow-blue: 0 0 20px rgba(59,130,246,0.15), 0 0 60px rgba(59,130,246,0.05);
+  --shadow-glow-purple: 0 0 20px rgba(99,102,241,0.15), 0 0 60px rgba(99,102,241,0.05);
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-spring: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Layout */
+  --navbar-height: 64px;
+  --max-width: 1280px;
+  --footer-height: auto;
+}
+
+/* ─── Reset & Base ─── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  height: 100%;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--gray-300);
+  background: var(--surface-primary);
+  line-height: 1.6;
+}
+
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ─── Typography ─── */
+h1 { font-size: 1.875rem; font-weight: 800; letter-spacing: -0.025em; color: #f1f5f9; }
+h2 { font-size: 1.5rem;   font-weight: 700; letter-spacing: -0.020em; color: #f1f5f9; }
+h3 { font-size: 1.125rem; font-weight: 600; letter-spacing: -0.015em; color: #e2e8f0; }
+p  { color: var(--gray-400); line-height: 1.6; }
+
+a { color: var(--primary-400); text-decoration: none; transition: color var(--transition-fast); }
+a:hover { color: var(--primary-300); }
+
+button { font-family: inherit; }
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: rgba(255,255,255,0.02); }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.2); }
+
+/* ─── Selection ─── */
+::selection { background: rgba(59,130,246,0.3); color: white; }
+
+/* ─── Gradient Text Utility ─── */
+.text-gradient {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ─── Decorative grid background ─── */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(59,130,246,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59,130,246,0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* ─── Page section ─── */
+.page-section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ─── Animated mesh background ─── */
+@keyframes mesh-float {
+  0%, 100% { transform: translate(0, 0); }
+  33% { transform: translate(30px, -20px); }
+  66% { transform: translate(-20px, 15px); }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(59,130,246,0.2); }
+  50% { box-shadow: 0 0 40px rgba(59,130,246,0.4); }
+}

@@ -1,0 +1,4 @@
+.app-content {
+  min-height: calc(100vh - var(--navbar-height, 64px));
+  background: var(--surface-primary, #0f1117);
+}
